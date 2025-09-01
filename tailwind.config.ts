@@ -3,10 +3,10 @@ import type { Config } from "tailwindcss";
 export default {
 	darkMode: ["class"],
 	content: [
-		"./pages/**/*.{ts,tsx}",
-		"./components/**/*.{ts,tsx}",
-		"./app/**/*.{ts,tsx}",
-		"./src/**/*.{ts,tsx}",
+		"./pages/**/*.{ts,tsx,js,jsx}",
+		"./components/**/*.{ts,tsx,js,jsx}",
+		"./app/**/*.{ts,tsx,js,jsx}",
+		"./src/**/*.{ts,tsx,js,jsx}",
 	],
 	prefix: "",
 	theme: {
@@ -52,6 +52,8 @@ export default {
 				},
 				success: 'hsl(var(--success))',
 				warning: 'hsl(var(--warning))',
+				'skill-orange': 'hsl(var(--skill-orange))',
+				'skill-blue': 'hsl(var(--skill-blue))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -74,6 +76,9 @@ export default {
 			},
 			backdropBlur: {
 				'glass': 'var(--backdrop-blur)'
+			},
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

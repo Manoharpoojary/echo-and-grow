@@ -1,8 +1,4 @@
-interface AvailabilityCalendarProps {
-  availability: string[];
-}
-
-export const AvailabilityCalendar = ({ availability }: AvailabilityCalendarProps) => {
+export const AvailabilityCalendar = ({ availability }) => {
   const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
   return (

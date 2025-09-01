@@ -24,6 +24,10 @@
     --primary: 194 76% 58%;
     --primary-foreground: 0 0% 100%;
     --primary-coral: 0 84% 70%;
+    
+    /* Skill badge colors */
+    --skill-orange: 25 95% 53%;
+    --skill-blue: 217 91% 60%;
 
     /* Secondary colors */
     --secondary: 220 15% 95%;
@@ -117,6 +121,6 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
   }
 }

@@ -1,18 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-interface Connection {
-  id: string;
-  name: string;
-  sport: string;
-  avatar: string;
-}
-
-interface ConnectionsListProps {
-  connections: Connection[];
-}
-
-export const ConnectionsList = ({ connections }: ConnectionsListProps) => {
+export const ConnectionsList = ({ connections }) => {
   return (
     <div className="bg-card backdrop-blur-glass border border-card-border rounded-2xl p-6 shadow-glass">
       <div className="flex items-center justify-between mb-4">

@@ -2,16 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MessageCircle, UserPlus } from "lucide-react";
 
-interface ProfileCardProps {
-  name: string;
-  location: string;
-  description: string;
-  avatar: string;
-  tags: Array<{ label: string; variant?: string }>;
-  connections: number;
-  score: number;
-}
-
 export const ProfileCard = ({
   name,
   location,
@@ -20,7 +10,7 @@ export const ProfileCard = ({
   tags,
   connections,
   score,
-}: ProfileCardProps) => {
+}) => {
   return (
     <div className="bg-card backdrop-blur-glass border border-card-border rounded-2xl p-6 shadow-glass">
       <div className="flex items-center justify-between">

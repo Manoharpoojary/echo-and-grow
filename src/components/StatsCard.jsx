@@ -1,14 +1,4 @@
-import { ReactNode } from "react";
-
-interface StatsCardProps {
-  title: string;
-  value: string | number;
-  subtitle?: string;
-  children?: ReactNode;
-  className?: string;
-}
-
-export const StatsCard = ({ title, value, subtitle, children, className = "" }: StatsCardProps) => {
+export const StatsCard = ({ title, value, subtitle, children, className = "" }) => {
   return (
     <div className={`bg-card backdrop-blur-glass border border-card-border rounded-2xl p-6 shadow-glass hover:shadow-hover transition-all duration-300 ${className}`}>
       <h3 className="text-sm font-medium text-muted-foreground mb-2">{title}</h3>
@@ -27,19 +17,12 @@ export const StatsCard = ({ title, value, subtitle, children, className = "" }: 
   );
 };
 
-interface CircularProgressProps {
-  value: number;
-  max: number;
-  size?: number;
-  strokeWidth?: number;
-}
-
 export const CircularProgress = ({ 
   value, 
   max, 
   size = 80, 
   strokeWidth = 8 
-}: CircularProgressProps) => {
+}) => {
   const radius = (size - strokeWidth) / 2;
   const circumference = radius * 2 * Math.PI;
   const offset = circumference - (value / max) * circumference;
